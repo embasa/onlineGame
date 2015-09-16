@@ -1,4 +1,4 @@
-var main = function(){
+var main = function () {
   $('a[href*=#]:not([href=#])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -10,9 +10,25 @@ var main = function(){
         return false;
       }
     }
+
   });
+
+};
+
+function changeImage(link,current,destination){
+  $('#modalWrapper img').attr('src',link);
+  $('#modalWrapper a').attr('href',destination);
+  $('#' + current).addClass('hidden');
+  $('#modalWrapper').removeClass('hidden');
+
+  return false;
+}
+
+function goToAns(){
+  var destination = $('#modalWrapper a').attr('href');
+  $('#modalWrapper').addClass('hidden');
+  $(destination).removeClass('hidden');
+
 };
 
 $(document).ready(main);
-
-
