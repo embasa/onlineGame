@@ -98,3 +98,8 @@ a:active {
   margin-right:-4px;
 }
 
+#modalWrapper{
+  width:585px;
+  height:390px;
+}
+
