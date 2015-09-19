@@ -15,11 +15,11 @@ var main = function () {
 
 };
 
-function changeImage(link,current,destination){
-  $('#modalWrapper img').attr('src',link);
-  $('#modalWrapper a').attr('href',destination);
-  $('#' + current).addClass('hidden');
-  $('#modalWrapper').removeClass('hidden');
+function nextVideo(link,current,destination){
+  $('#modalWrapper iframe').attr('src',link);
+  //$('#modalWrapper a').attr('href',destination);
+  $(current).addClass('hidden');
+  $(destination).removeClass('hidden');
 
   return false;
 }
