@@ -16,19 +16,12 @@ var main = function () {
 };
 
 function nextVideo(link,current,destination){
-  $('#modalWrapper iframe').attr('src',link);
+  $('#videoFrame').attr('src',link);
   //$('#modalWrapper a').attr('href',destination);
   $(current).addClass('hidden');
   $(destination).removeClass('hidden');
 
   return false;
 }
-
-function goToAns(){
-  var destination = $('#modalWrapper a').attr('href');
-  $('#modalWrapper').addClass('hidden');
-  $(destination).removeClass('hidden');
-
-};
 
 $(document).ready(main);
