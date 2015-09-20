@@ -20,326 +20,479 @@
   <![endif]-->
 </head>
 <body>
-<div class="container">
-  <div id=wrapper class="row">
+<div class="container text-center">
+  <div class="row text-center" id=wrapper>
     <img class="logo" src="http://i.imgur.com/Ja4JCVb.png" alt="Logo Image" width="126px">
   </div>
-
-  <div class="row text-center" id="modalWrapper">
+  <div class="row row-centered" id="modalWrapper" style="height: 562px;width:100%">
     <div class="col-centered">
-      <div class="row">
-        <img class="row-centered" id="image-link" src="images/startpicture.jpg" style="width:585px;height:390px"/>
-      </div>
 
-      <div class="responsive-video row">
-        <iframe src="http://player.vimeo.com/video/22428395">
-
-        </iframe>
-      </div>
-      <div class="row row-centered">
-        <a onclick="goToAns()" href="#">Click Me!</a>
+      <div class="col-centered" style="width: 1000px;height: 562px">
+        <div class="col-centered">
+          <iframe class="row-centered" align="middle" src="https://player.vimeo.com/video/71876963?autoplay=1"
+                  style="width: 1000px;height: 562px">
+          </iframe>
+        </div>
       </div>
     </div>
   </div>
-  <div id="answer-block" class="row text-center">
-    <section class="container" id="sec1">
-      <div class="row hidden">
-        <div id="page1title" class="page ">
-          <h2 id="nana">Section 1</h2>
-        </div>
-      </div>
 
-      <div class="row text-center" id="ans1-1">
-        <div class="row text-center">
-          <h3 class="row-centered">Answer 1.1</h3>
-        </div>
-        <div class="row col-centered">
-          <ul class="list-group">
-            <li><a id="ans1-1q1" onclick="changeImage('images/JS_dies.png','ans1-1','#ans2-3')"
-                   href="#">night of the dead S2-Q2.3</a></li>
-            <li><a id="ans1-1q2" onclick="changeImage('images/AL_dies.png','ans1-1','#ans2-4')"
-                   href="#">shadow of death S2-Q2.4</a></li>
-            <li><a id="ans1-1q3" onclick="changeImage('images/AN_dies.png','ans1-1','#ans2-2')"
-                   href="#">the apocalypse S2-Q2.2</a></li>
-            <li><a id="ans1-1q4" onclick="changeImage('images/three.png','ans1-1','#ans2-1')"
-                   href="#">absence of light S2-Q2.1</a></li>
-          </ul>
-        </div>
+  <div class="row text-center" id="answer-block">
+    <div class="row text-center" id="ans1-1">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 1.1</h3>
       </div>
-    </section>
+      <div class="row col-centered">
+        <ul class="list-group">
+          <li><a id="ans1-1q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans1-1','#ans2-3')"
+                 href="#">night of the dead S2-Q2.3</a></li>
+          <li><a id="ans1-1q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans1-1','#ans2-4')"
+                 href="#">shadow of death S2-Q2.4</a></li>
+          <li><a id="ans1-1q3"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans1-1','#ans2-2')"
+                 href="#">the apocalypse S2-Q2.2</a></li>
+          <li><a id="ans1-1q4"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans1-1','#ans2-1')"
+                 href="#">absence of light S2-Q2.1</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <section class="container" id="sec2">
-      <div class="page hidden">
-        <p>Section 2</p>
+    <div class="row text-center hidden" id="ans2-1">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 2.1</h3>
       </div>
-
-      <div class="row text-center hidden" id="ans2-1">
-        <div class="col-centered">
-          <ol class="list-group">
-            <p>Answer 2.1</p>
-            <li><a id="ans2-1q1" onclick="changeImage('images/AN_dies.png','ans2-1','#ans3-2')"
-                   href="#">The median ocelli of a thousand eyes and on P3-Q3.2</a></li>
-            <li><a id="ans2-1q2" onclick="changeImage('images/AL_dies.png','ans2-1','#ans3-4')"
-                   href="#">The Earth P3-Q3.4</a></li>
-            <li><a id="ans2-1q3" onclick="changeImage('images/three.png','ans2-1','#ans3-7')"
-                   href="#">3: the part of the central nervous system enclosed in
-              the cranium P3-Q3.7</a></li>
-            <li><a id="ans2-1q4" onclick="changeImage('images/JS_dies.png','ans2-1','#ans3-3')"
-                   href="#">4: the omnipotent observation of vibrational
-              pressure displacement through air P3-Q3.3</a></li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="row text-center hidden" id="ans2-2">
-        <div class="col-centered">
-          <ol class="answer">
-            <p>Answer 2.2</p>images/AL_dies.png
-            <li><a id="ans2-2q1" onclick="changeImage('images/AL_JS.png','ans2-2','#ans3-2')"
-                   href="#">1: the part of the central nervous system
-              enclosed in
-              the cranium P3-Q3.2</a></li>
-            <li><a id="ans2-2q2" onclick="changeImage('images/JS_dies.png','ans2-2','#ans3-1')"
-                   href="#">2: the omnipotent observation of vibrational pressure
-              displacement through air P3-Q3.1</a></li>
-            <li><a id="sec2ans2-2q3" onclick="changeImage('images/AL_dies.png','ans2-2','#ans3-6')"
-                   href="#">3: the Earth P3.2-Q3.6</a></li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="row text-center hidden" id="ans2-3">
-        <div class="col-centered">
-          <ol class="answer">
-            <p>Answer 2.3</p>
-            <li><a id="sec2ans2-3q1" onclick="changeImage('images/AL_dies.png','ans2-3','#ans3-5')"
-                   href="#">1: the Earth P3.2-Q3.5</a></li>
-            <li><a id="sec2ans2-3q2" onclick="changeImage('images/AN_AL.png','ans2-3','#ans3-3')"
-                   href="#">2: the part of the central nervous system enclosed in
-              the cranium P3-Q3.3</a></li>
-            <li><a id="sec2ans2-3q3" onclick="changeImage('images/AN_dies.png','ans2-3','#ans3-1')"
-                   href="#">3: the median ocelli of a thousand eyes and one
-              P3-Q3.1</a></li>
-          </ol>
-        </div>
-      </div>
-      <div class="row text-center hidden" id="ans2-4">
-        <div class="col-centered">
-          <ol class="answer">
-            <p> Answer 2.4</p>
-            <li><a id="sec2ans2-4q1" onclick="changeImage('images/AN_dies.png','ans2-4','#ans3-6')"
-                   href="images/AN_dies.png">1: the median ocelli of a thousand eyes
-              and
-              one
-              P3-Q3.6</a></li>
-            <li><a id="sec2ans2-4q2" onclick="changeImage('images/AN_JS.png','ans2-4','#ans3-4')"
-                   href="#">2: the omnipotent observation of
-              vibrational
-              pressure displacement through air P3-Q3.4</a></li>
-            <li><a id="sec2ans2-4q3" onclick="changeImage('images/JS_dies.png','ans2-4','#ans3-5')"
-                   href="#">3: the part of the central nervous system
-              enclosed
-              in the cranium P3-Q3.5</a></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section class="container" id="sec3">
-      <div class="page hidden">
-        <h2>Section 3</h2>
-      </div>
-      <div class="row text-center hidden" id="ans3-1">
-        <ol class="answer">
-          <p>Answer 3.1</p>
-          <li><a class="fancybox" href="images/demon.png">1: metameric segments of the millipede (The End)</a></li>
-          <li><a class="fancybox" href="images/AL.png">2: bipedal primate P4.2-Q4.6</a></li>
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans2-1q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans2-1','#ans3-2')"
+                 href="#">The median ocelli of a thousand eyes and on P3-Q3.2</a></li>
+          <li><a id="ans2-1q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans2-1','#ans3-4')"
+                 href="#">The Earth P3-Q3.4</a></li>
+          <li><a id="ans2-1q3"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans2-1','#ans3-7')"
+                 href="#">3: the part of the central nervous system enclosed in
+            the cranium P3-Q3.7</a></li>
+          <li><a id="ans2-1q4"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans2-1','#ans3-3')"
+                 href="#">4: the omnipotent observation of vibrational
+            pressure displacement through air P3-Q3.3</a></li>
         </ol>
       </div>
-      <div class="hidden" id="ans3-2">
-        <ol class="answer">
-          <p>Answer 3.2</p>
-          <li><a class="fancybox" href="images/JS_dies.png">1: butterfly pupa P4.2-Q4.6</a></li>
-          <li><a class="fancybox" href="images/AL_JS.png">2: bipedal primate P4-Q4.1</a></li>
-          <li><a class="fancybox" href="images/AL_dies.png">3: alcohol induced purge P4.2-Q4.5</a></li>
-        </ol>
+    </div>
+
+    <div class="row text-center hidden" id="ans2-2">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 2.2</h3>
       </div>
 
-      <div class="hidden" id="ans3-3">
-        <ol class="answer">
-          <p>Answer 3.3</p>
-          <li><a class="fancybox" href="images/AN_AL.png">1: bipedal primate P4-Q4.2</a></li>
-          <li><a class="fancybox" href="images/AN_dies.png">2: butterfly pupa P4.2-Q4.6</a></li>
-          <li><a class="fancybox" href="images/AL_dies.png">3: alcohol induced purge P4-Q4.4</a></li>
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans2-2q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans2-2','#ans3-2')"
+                 href="#">1: the part of the central nervous system enclosed in the cranium P3-Q3.2</a></li>
+          <li><a id="ans2-2q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans2-2','#ans3-1')"
+                 href="#">2: the omnipotent observation of vibrational pressure displacement through air P3-Q3.1</a>
+          </li>
+          <li><a id="sec2ans2-2q3"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans2-2','#ans3-6')"
+                 href="#">3: the Earth P3.2-Q3.6</a></li>
         </ol>
       </div>
-      <div class="hidden" id="ans3-4">
-        <ol class="answer">
-          <p>Answer 3.4</p>
-          <li><a class="fancybox" href="images/AN_dies.png">1: metameric segments of the millipede P4.2-Q4.5</a></li>
-          <li><a class="fancybox" href="images/JS_dies.png">2: alcohol induced purge P4-Q4.4</a></li>
-          <li><a class="fancybox" href="images/AN_JS.png">3: bipedal primate P4-Q4.3</a></li>
-        </ol>
+    </div>
+
+    <div class="row text-center hidden" id="ans2-3">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 2.3</h3>
       </div>
 
-      <div class="hidden" id="ans3-5">
-        <ol class="answer">
-          <p>Answer 3.5</p>
-          <li><a class="fancybox" href="images/AN.png">1: metameric segments of the millipede P4-Q4.4</a></li>
-          <li><a class="fancybox" href="images/demon.png">2: butterfly pupa (The End) </a></li>
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans2-3q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans2-3','#ans3-5')"
+                 href="#">1: the Earth P3-Q3.5</a></li>
+          <li><a id="ans2-3q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans2-3','#ans3-3')"
+                 href="#">2: the part of the central nervous system enclosed in the cranium P3-Q3.3</a></li>
+          <li><a id="ans2-3q3"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans2-3','#ans3-1')"
+                 href="#">3: the median ocelli of a thousand eyes and one P3-Q3.1</a></li>
         </ol>
       </div>
+    </div>
 
-      <div class="hidden" id="ans3-6">
-        <ol class="answer">
-          <p>Answer 3.6</p>
-          <li><a class="fancybox" href="images/demon.png">1: alcohol induced purge (The End) </a></li>
-          <li><a class="fancybox" href="images/JS.png">2: bipedal primate P4.2-Q4.5</a></li>
-        </ol>
+    <div class="row text-center hidden" id="ans2-4">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 2.4</h3>
       </div>
 
-      <div class="hidden" id="ans3-7">
-        <ol class="answer">
-          <p>Answer 3.7</p>
-          <li><a class="fancybox" href="images/three_free.png">1: sequential relationship of past, present, future (The
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans2-4q1"
+                 onclick=" nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans2-4','#ans3-6')"
+                 href="#">1: the median ocelli of a thousand eyes and one P3-Q3.6</a></li>
+          <li><a id="ans2-4q2"
+                 onclick=" nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans2-4','#ans3-4')"
+                 href="#">2: the omnipotent observation of vibrational pressure displacement through air P3-Q3.4</a>
+          </li>
+          <li><a id="ans2-4q3"
+                 onclick=" nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans2-4','#ans3-5')"
+                 href="#">3: the part of the central nervous system enclosed in the cranium P3-Q3.5</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans3-1">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 3.1</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans3-1q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-1','#ans3-5')"
+                 href="#"> metameric segments of the millipede (The End)</a>
+          </li>
+          <li><a id="ans3-1q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-1','#ans4-6')"
+                 href="#"> bipedal primate P4-Q4.6</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans3-2">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 3.2</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans3-2q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-2','#ans4-6')"
+                 href="#">1: butterfly pupa P4-Q4.6</a></li>
+          <li><a id="ans3-2q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-2','#ans4-1')"
+                 href="#"> bipedal primate P4-Q4.1</a></li>
+          <li><a id="ans3-2q3"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-2','#ans4-5')"
+                 href="#">3: alcohol induced purge P4-Q4.5</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans3-3">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 3.3</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans3-3q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-3','#ans4-2')" href="#">1:
+            bipedal primate P4-Q4.2</a></li>
+          <li><a id="ans3-3q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-3','#ans4-6')" href="#">2:
+            butterfly pupa P4-Q4.6</a></li>
+          <li><a id="ans3-3q3"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-3','#ans4-4')" href="#">3:
+            alcohol induced purge P4-Q4.4</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans3-4">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 3.4</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans3-4q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-4','#ans4-5')" href="#">
+            1: metameric segments of the millipede P4-Q4.5</a>
+          </li>
+          <li><a id="ans3-4q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-4','#ans4-4')" href="#">
+            2: alcohol induced purge P4-Q4.4</a></li>
+          <li><a id="ans3-4q3"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-4','#ans4-3')" href="#">
+            href="#">3: bipedal primate P4-Q4.3</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans3-5">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 3.5</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans3-5q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-5','#ans4-4')" href="#">
+            1: metameric segments of the millipede P4-Q4.4</a></li>
+          <li><a id="ans3-5q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-5','#ans4-4')" href="#">
+            2: butterfly pupa (The End) </a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans3-6">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 3.6</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans3-6q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-6','#ans4-3')" href="#">
+            1: alcohol induced purge (The End) </a></li>
+          <li><a id="ans3-6q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans3-6','#ans4-5')" href="#">
+            2: bipedal primate P4.2-Q4.5</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans3-7">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 3.7</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans3-7q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-7','#ans1-1')" href="#">
+            1: sequential relationship of past, present, future
+            (The
             End) </a>
           </li>
-          <li><a class="fancybox" href="images/AN_dies.png">2: red iron oxide in the presence of air and moisture
+          <li><a id="ans3-7q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-7','#ans4-1')" href="#">
+            2: red iron oxide in the presence of air and moisture
             P4-Q4.1</a>
           </li>
-          <li><a class="fancybox" href="images/AL_dies.png">3: exogenic process of soil and rock P4-Q4.3</a></li>
-          <li><a class="fancybox" href="images/JS_dies.png">4: the separation or resolution into constituent parts or
+          <li><a id="ans3-7q3"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-7','#ans4-3')" href="#">
+            3: exogenic process of soil and rock P4-Q4.3</a></li>
+          <li><a id="ans3-7q4"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans3-7','#ans4-2')" href="#">
+            4: the separation or resolution into constituent parts
+            or
             elements
             P4-Q4.2</a></li>
         </ol>
       </div>
-    </section>
+    </div>
 
-    <section class="container" id="sec4">
-      <div class="page hidden">
-        <h2>Section 4</h2>
+    <div class="row text-center hidden" id="ans4-1">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 4.1</h3>
       </div>
-      <div class="hidden" id="ans4-1">
-        <ol class="answer">
-          <p>Answer 4.1</p>
-          <li><a class="fancybox" href="images/JS_dies.png">1: butterfly pupa P5-Q5.1</a></li>
-          <li><a class="fancybox" href="images/AL_dies.png">2: alcohol induced purge P5-Q5.2</a></li>
-          <li><a class="fancybox" href="images/JS_AL%20free.png">3: bipedal primate (The End) </a></li>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans4-1q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-1','#ans5-1')"
+                 href="#">1: butterfly pupa P5-Q5.1</a></li>
+          <li><a id="ans4-1q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-1','#ans5-2')" href="#">2:
+            alcohol induced purge P5-Q5.2</a></li>
+          <li><a id="ans4-1q3"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-1','#ans1-1')"
+                 href="#">3: bipedal primate (The End) </a></li>
         </ol>
       </div>
+    </div>
 
-      <div class="hidden" id="ans4-2">
-        <ol class="answer">
-          <p>Answer 4.2</p>
-          <li><a class="fancybox" href="images/AN_AL%20free.png">1: bipedal primate (The End) </a></li>
-          <li><a class="fancybox" href="images/AN_dies.png">2: metameric segments of the millipede P5-Q5.1</a></li>
-          <li><a class="fancybox" href="images/AL_dies.png">3: alcohol induced purge P5-Q5.3</a></li>
-        </ol>
+    <div class="row text-center hidden" id="ans4-2">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 4.2</h3>
       </div>
 
-      <div class="hidden" id="ans4-3">
-        <ol class="answer">
-          <p>Answer 4.3</p>
-          <li><a class="fancybox" href="images/AN_dies.png">1: exogenic process of soil and rock P5-Q5.2</a></li>
-          <li><a class="fancybox" href="images/JS_dies.png">2: red iron oxide in the presence of air and moisture
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans4-2q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans4-2','#ans1-1')" href="#">1:
+            bipedal primate (The End) </a></li>
+          <li><a id="ans4-2q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans4-2','#ans5-1')" href="#">2:
+            metameric segments of the millipede P5-Q5.1</a>
+          </li>
+          <li><a id="ans4-2q3"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans4-2','#ans5-3')" href="#">3:
+            alcohol induced purge P5-Q5.3</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans4-3">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 4.3</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans4-3q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-3','#ans5-2')" href="#">
+            1: exogenic process of soil and rock P5-Q5.2</a></li>
+          <li><a id="ans4-3q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-3','#ans5-3')" href="#">
+            2: red iron oxide in the presence of air and moisture
             P5-Q5.3</a>
           </li>
-          <li><a class="fancybox" href="images/JS_AN%20free.png">3: sequential relationship of past, present, future
+          <li><a id="ans4-3q3"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-3','#ans1-1')"
+                 href="#">
+            3: sequential relationship of past, present,
+            future
             (The
             End) </a>
           </li>
         </ol>
       </div>
+    </div>
 
-      <div class="hidden" id="ans4-4">
-        <ol class="answer">
-          <p>Answer 4.4</p>
-          <li><a class="fancybox" href="images/demon.png">1: the separation or resolution into constituent parts or
+    <div class="row text-center hidden" id="ans4-4">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 4.4</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans4-4q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-4','#ans1-1')"
+                 href="#">
+            1: the separation or resolution into constituent parts
+            or
             elements (The
             End) </a></li>
-          <li><a class="fancybox" href="images/AN.png">2: sequential relationship of past, present, future P5-Q5.3</a>
+          <li><a id="ans4-4q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans4-4','#ans5-3')" href="#">
+            2: sequential relationship of past, present, future
+            P5-Q5.3</a>
           </li>
         </ol>
       </div>
+    </div>
 
-      <div class="hidden" id="ans4-5">
-        <ol class="answer">
-          <p>Answer 4.5</p>
-          <li><a class="fancybox" href="images/JS.png">1: sequential relationship of past, present, future P5-Q5.2</a>
-          </li>
-          <li><a class="fancybox" href="images/demon.png">2: exogenic process of soil and rock (The End) </a></li>
-        </ol>
+    <div class="row text-center hidden" id="ans4-5">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 4.5</h3>
       </div>
 
-      <div class="hidden" id="ans4-6">
-        <ol class="answer">
-          <p>Answer 4.6</p>
-          <li><a class="fancybox" href="images/demon.png">1: red iron oxide in the presence of air and moisture (The
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans4-5q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans4-5','#ans5-2')" href="#">
+            1: sequential relationship of past, present, future
+            P5-Q5.2</a>
+          </li>
+          <li><a id="ans4-5q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans4-5','#ans1-1')" href="#">
+            2: exogenic process of soil and rock (The End) </a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans4-6">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 4.6</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id=ans4-6q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans4-6','#ans1-1')"
+                 href="#">
+            1: red iron oxide in the presence of air and moisture
+            (The
             End) </a>
           </li>
-          <li><a class="fancybox" href="images/AL.png">2: sequential relationship of past, present, future P5-Q5.1</a>
+          <li><a id=ans4-6q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans4-6','#ans5-1')" href="#">
+            2: sequential relationship of past, present, future
+            P5-Q5.1</a>
           </li>
         </ol>
       </div>
-    </section>
+    </div>
 
-    <section class="container" id="sec5">
-      <div class="page hidden">
-        <h2>Section 5</h2>
-      </div>
-      <div class="hidden text-center" id="ans5-1">
-        <ol class="answer">
-          <p>Answer 5.1</p>
-          <li><a class="fancybox" href="images/demon.png">1: aurora borealis (The End) </a></li>
-          <li><a class="fancybox" href="images/AL%20free.png">2: fixed luminous points of light over the nocturnal sky
-            (The
-            End) </a></li>
-        </ol>
+    <div class="row text-center hidden" id="ans5-1">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 5-1</h3>
       </div>
 
-      <div class="hidden text-center" id="ans5-2">
-        <ol class="answer">
-          <p>Answer 5.2</p>
-          <li><a class="fancybox" href="images/JS%20free.png">1: fixed luminous points of light over the nocturnal sky
-            (The
-            End) </a></li>
-          <li><a class="fancybox" href="images/demon.png">2: a source of illumination consisting of some combustible
-            substance
-            (The End) </a></li>
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans5-1q1"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans5-1','#ans1-1')"
+                 href="#"> 1: aurora borealis (The End) </a></li>
+          <li><a id="ans5-1q2"
+                 onclick="nextVideo('http://player.vimeo.com/video/22428395?autoplay=1','#ans5-1','#ans1-1')"
+                 href="#">2: fixed luminous points of light over the nocturnal sky (The End) </a></li>
         </ol>
+      </div>
+    </div>
+
+    <div class="row text-center hidden" id="ans5-2">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 5-2</h3>
       </div>
 
-      <div class="row hidden text-center" id="ans5-3">
-        <ol class="answer">
-          <p>Answer 5.3</p>
-          <li><a class="fancybox" href="images/demon.png">1: cardinal direction guided by the Earth’s magnetic field
-            (The
-            End) </a></li>
-          <li><a class="fancybox" href="images/AN%20free.png">2: fixed luminous points of light over the nocturnal sky
-            (The
-            End) </a></li>
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans5-2q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans5-2','#ans1-1')"
+                 href="#">1: fixed luminous points of light over the nocturnal sky (The End) </a></li>
+          <li><a id="ans5-2q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans5-2','#ans1-1')"
+                 href="#">2: a source of illumination consisting of some combustible substance (The End) </a></li>
         </ol>
       </div>
-    </section>
+    </div>
+
+    <div class="row text-center hidden" id="ans5-3">
+      <div class="row text-center">
+        <h3 class="row-centered">Answer 5-3</h3>
+      </div>
+
+      <div class="row col-centered">
+        <ol class="list-group">
+          <li><a id="ans5-3q1"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans5-3','#ans2-3')"
+                 href="#">1: cardinal direction guided by the Earth’s magnetic field (The End) </a></li>
+          <li><a id="ans5-3q2"
+                 onclick="nextVideo('https://player.vimeo.com/video/71876963?autoplay=1','#ans5-3','#ans1-1')"
+                 href="#">2: fixed luminous points of light over the nocturnal sky (The End) </a></li>
+        </ol>
+      </div>
+    </div>
   </div>
 </div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bruno.js"></script>
 </body>
+
+<style type="text/css">
+  /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+  body {
+    background: #4A525A;
+  !important;
+  }
+
+</style>
 
 <footer class=ending>
   <div>
     <img class="logo" src="http://i.imgur.com/Ja4JCVb.png" alt="Logo Image" width="200px">
   </div>
 </footer>
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bruno.js"></script>
-<style type="text/css">
-  body {
-    background: #4A525A;
-  !important;
-  }
-
-  /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-</style>
 </html>
